@@ -53,7 +53,7 @@ void loop() {
 
   if (lux > 50) {
     Serial.println("white");
-    
+
     // green timer
     digitalWrite(GREEN_LED, HIGH);
     delay(3000);
@@ -68,7 +68,7 @@ void loop() {
     isRed = 1;
     digitalWrite(RED_LED, HIGH);
     delay(5000);
-    // send a http request to google if the wifi is connected and the light is red
+    send a http request to google if the wifi is connected and the light is red
     if (WiFi.status() == WL_CONNECTED) {
       HTTPClient http;
 
